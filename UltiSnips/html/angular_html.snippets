@@ -1,44 +1,39 @@
+snippet ngindex "Angular minidoc"
+<!DOCTYPE html>
+<html ng-app="${1:myApp}">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/${2:1.3.8}/angular.js"></script>
+<script src="${3:app.js}"></script>
 
-
-snippet ngindex "Basic Angular Bootstrap (For Prototyping)"
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/${1:1.2.12}/angular.js"></script>
-</head>
-<body ng-app>
-
-$0
-
+<body ng-controller="${4:MyController}">
+	$5
 </body>
-</html>
 endsnippet
 
 
-snippet ngsa "Angular Source Script"
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/${1:1.2.12}/angular.js"></script>
-
+snippet ngscript "script tag pointing at Angular source"
+<script src="${1:https:}//ajax.googleapis.com/ajax/libs/angularjs/${2:1.3.8}/angular.js"></script>
 $0
 endsnippet
 
 
-snippet ngst "A script tag holding Angular template"
+snippet ngtpl "script tag containing an Angular template"
 <script type="text/ng-template" id="${1:id}">
-$0
+$1
 </script>
 endsnippet
 
 
-snippet ngb "A binding in AngularJS"
-{{${1:binding}}}$0
+snippet nge "Angular markup expression"
+{{ ${1:expression} }}$0
 endsnippet
 
 
-snippet ngm "Bind a view to a model"
+snippet ngm "ng-model"
 ng-model="${1:model}"$0
 endsnippet
 
 
-snippet ngd "Disable a form element"
+snippet ngd "ng-disabled"
 ng-disabled="${1:model}"$0
 endsnippet
 
